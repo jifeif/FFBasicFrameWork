@@ -80,7 +80,6 @@ NSString *const FFBrowserImageCollectionViewCell_identity = @"FFBrowserImageColl
 
 - (void)setBrowserImageItem:(FFBrowserImageItem *)browserImageItem {
     _browserImageItem = browserImageItem;
-//    [self.panGesture requireGestureRecognizerToFail:self.supreCollectionView.panGestureRecognizer];
     if (browserImageItem.image) {
         [self FF_SetImage:browserImageItem.image];
     }else {

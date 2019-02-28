@@ -100,10 +100,6 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
-//- (BOOL)prefersStatusBarHidden {
-//    return YES;
-//}
-
 #pragma mark -- flexable method
 - (void)FF_acquireNeedDataWithImageArray:(nullable NSArray *)imageArray imageURLArray:(nullable NSArray *)imageURLArray imageViewArray:(nullable NSArray *)imageViewArray selectIndex:(NSInteger)selectIndex {
     self.selectIndex = selectIndex;
