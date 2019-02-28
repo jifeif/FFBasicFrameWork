@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  FFBasicFrameWork
+//
+//  Created by jisa on 2019/2/12.
+//  Copyright © 2019 jisa. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIImage+Extension.h"
+#import "UIImageView+Extension.h"
+
+
+#import "FFSystemInfoMacro.h"
+
+#import <SDWebImage/SDWebImage.h>
+
+#endif /* PrefixHeader_pch */
