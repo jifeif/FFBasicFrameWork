@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		40361BE2222515DA007D82E9 /* FFPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 40361BE1222515DA007D82E9 /* FFPageControl.m */; };
+		406153902231FDDD004EE3FB /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4061538F2231FDDD004EE3FB /* MineViewController.m */; };
+		40615394223211A1004EE3FB /* FFCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40615393223211A1004EE3FB /* FFCameraViewController.m */; };
+		406153982232175B004EE3FB /* FFGeneralMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 406153972232175B004EE3FB /* FFGeneralMethod.m */; };
 		40844CED22212C0C0004089F /* FFBrowserImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40844CE922212C0C0004089F /* FFBrowserImageCollectionViewCell.m */; };
 		40844CEE22212C0C0004089F /* FFBrowserImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 40844CEA22212C0C0004089F /* FFBrowserImageItem.m */; };
 		40844CEF22212C0C0004089F /* FFBrowserImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40844CEB22212C0C0004089F /* FFBrowserImageViewController.m */; };
@@ -49,6 +52,13 @@
 		40361BE0222515DA007D82E9 /* FFPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPageControl.h; sourceTree = "<group>"; };
 		40361BE1222515DA007D82E9 /* FFPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPageControl.m; sourceTree = "<group>"; };
 		405C2CAC2215743900EC472B /* FFSystemInfoMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFSystemInfoMacro.h; sourceTree = "<group>"; };
+		4061538E2231FDDD004EE3FB /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		4061538F2231FDDD004EE3FB /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		40615392223211A1004EE3FB /* FFCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFCameraViewController.h; sourceTree = "<group>"; };
+		40615393223211A1004EE3FB /* FFCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFCameraViewController.m; sourceTree = "<group>"; };
+		406153962232175B004EE3FB /* FFGeneralMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFGeneralMethod.h; sourceTree = "<group>"; };
+		406153972232175B004EE3FB /* FFGeneralMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFGeneralMethod.m; sourceTree = "<group>"; };
+		4061539922321F53004EE3FB /* FFColorAndFontMacor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFColorAndFontMacor.h; sourceTree = "<group>"; };
 		40844CE722212C0C0004089F /* FFBrowserImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFBrowserImageItem.h; sourceTree = "<group>"; };
 		40844CE822212C0C0004089F /* FFBrowserImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFBrowserImageViewController.h; sourceTree = "<group>"; };
 		40844CE922212C0C0004089F /* FFBrowserImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFBrowserImageCollectionViewCell.m; sourceTree = "<group>"; };
@@ -113,8 +123,27 @@
 			isa = PBXGroup;
 			children = (
 				405C2CAC2215743900EC472B /* FFSystemInfoMacro.h */,
+				4061539922321F53004EE3FB /* FFColorAndFontMacor.h */,
 			);
 			path = Macro;
+			sourceTree = "<group>";
+		};
+		406153912232023B004EE3FB /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				40615392223211A1004EE3FB /* FFCameraViewController.h */,
+				40615393223211A1004EE3FB /* FFCameraViewController.m */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		4061539522321713004EE3FB /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				406153962232175B004EE3FB /* FFGeneralMethod.h */,
+				406153972232175B004EE3FB /* FFGeneralMethod.m */,
+			);
+			path = Method;
 			sourceTree = "<group>";
 		};
 		40844CE622212C0C0004089F /* ImageBrowserMethod */ = {
@@ -186,6 +215,8 @@
 		40FA42082212C65800FD106C /* General */ = {
 			isa = PBXGroup;
 			children = (
+				4061539522321713004EE3FB /* Method */,
+				406153912232023B004EE3FB /* Camera */,
 				40844CE622212C0C0004089F /* ImageBrowserMethod */,
 				405C2CAB2215741600EC472B /* Macro */,
 				40FA421F2212C7E400FD106C /* Category */,
@@ -214,6 +245,8 @@
 		40FA420D2212C65800FD106C /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				4061538E2231FDDD004EE3FB /* MineViewController.h */,
+				4061538F2231FDDD004EE3FB /* MineViewController.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -422,8 +455,11 @@
 				40FA42222212C80E00FD106C /* UIImage+Extension.m in Sources */,
 				40844CF5222138720004089F /* FFHomeCollectionViewCell.m in Sources */,
 				40844CEE22212C0C0004089F /* FFBrowserImageItem.m in Sources */,
+				406153902231FDDD004EE3FB /* MineViewController.m in Sources */,
 				40FA421D2212C65800FD106C /* AppDelegate.m in Sources */,
+				40615394223211A1004EE3FB /* FFCameraViewController.m in Sources */,
 				40361BE2222515DA007D82E9 /* FFPageControl.m in Sources */,
+				406153982232175B004EE3FB /* FFGeneralMethod.m in Sources */,
 				40844CEF22212C0C0004089F /* FFBrowserImageViewController.m in Sources */,
 				40844CF222212CEB0004089F /* UIImageView+Extension.m in Sources */,
 				40FA42182212C65800FD106C /* ViewController.m in Sources */,
@@ -599,16 +635,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = L7C96FZHLC;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FFBasicFrameWork/Support/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/FFBasicFrameWork/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jisa.FFBasicFrameWork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ff.youQianZhuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -626,7 +662,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jisa.FFBasicFrameWork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ff.youQianZhuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

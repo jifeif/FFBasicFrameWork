@@ -12,8 +12,9 @@
 #import "UIImage+Extension.h"
 #import "UIImageView+Extension.h"
 
-
+#import "FFGeneralMethod.h"
 #import "FFSystemInfoMacro.h"
+#import "FFColorAndFontMacor.h"
 
 #import <SDWebImage/SDWebImage.h>
 
